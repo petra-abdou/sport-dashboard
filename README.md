@@ -1,75 +1,102 @@
-# Nuxt Minimal Starter
+# Sports Dashboard
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A responsive sports dashboard built with **Nuxt, Vue 3 and TypeScript**.
 
-## Setup
+The project provides a clean interface for browsing sports and viewing upcoming matches, with a component-based architecture designed to be easy to extend.
 
-Make sure to install dependencies:
+## 🚀 Tech Stack
+
+* **Nuxt**
+* **Vue 3**
+* **TypeScript**
+* **pnpm**
+* **CSS**
+* Component-based architecture
+
+## ✨ Features
+
+* Browse available sports
+* Display upcoming matches
+* Filter matches by sport
+* Reusable Vue components
+* Strong TypeScript typing
+* Responsive interface
+* Structured data models for sports and matches
+
+## 📁 Project Structure
+
+```text
+app/
+├── components/
+│   ├── MatchList.vue
+│   ├── SportHeader.vue
+│   └── SportList.vue
+│
+├── data/
+│   ├── matches.ts
+│   └── sports.ts
+│
+├── types/
+│   ├── match.ts
+│   └── sport.ts
+│
+└── app.vue
+
+public/
+├── favicon.ico
+└── robots.txt
+
+nuxt.config.ts
+package.json
+tsconfig.json
+```
+
+## 🛠️ Getting Started
+
+### Install dependencies
+
+This project uses **pnpm**.
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### Start the development server
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+The application will be available at:
 
-Build the application for production:
+```text
+http://localhost:3000
+```
+
+## 🏗️ Production
+
+Build the application:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Preview the production build locally:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 🎯 Project Goals
+
+This project is part of my Frontend Engineering portfolio and focuses on building a modern, maintainable application using Vue 3, Nuxt and TypeScript.
+
+Future iterations will include additional functionality such as API integration, improved filtering, testing and further UI/UX improvements.
+
+## 👩‍💻 Author
+
+**Petra Abdou**
+
+Frontend Developer / Senior Software Engineer
+
+GitHub: [@petra-abdou](https://github.com/petra-abdou)
