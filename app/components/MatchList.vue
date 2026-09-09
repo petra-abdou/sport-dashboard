@@ -1,32 +1,11 @@
 <script setup lang="ts">
 import type { Match } from '../types/match'
+import { formatMatchStatus, formatMatchDate } from '../utils/matches'
 
 const props = defineProps<{
   matches: Match[]
 }>()
 
-const formatDate = (date: string) => {
-  const matchDate = new Date(date);
-
-  return matchDate.toLocaleDateString('en-GB', {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit'
-  })
-}
-
-const formatStatus = (status: Match['status']) => {
-  switch (status) {
-    case 'upcoming':
-      return 'Upcoming'
-    case 'live':
-      return 'Live'
-    case 'finished':
-      return 'Finished'
-  }
-}
 </script>
 
 <template>
@@ -55,7 +34,7 @@ const formatStatus = (status: Match['status']) => {
           <span class="vs">VS</span>
 
           <span class="match-date">
-            {{ formatDate(match.date) }}
+            {{ formatMatchDate(match.date) }}
           </span>
 
           <span
@@ -67,7 +46,7 @@ const formatStatus = (status: Match['status']) => {
               class="live-dot"
             ></span>
 
-            {{ formatStatus(match.status) }}
+            {{ formatMatchStatus(match.status) }}
           </span>
         </div>
 
