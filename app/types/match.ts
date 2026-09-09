@@ -3,4 +3,6 @@ export type Match = {
   sport: string
   homeTeam: string
   awayTeam: string
+  date: string
+  status: 'upcoming' | 'live' | 'finished'
 }
